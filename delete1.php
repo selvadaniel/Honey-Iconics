@@ -1,5 +1,12 @@
-
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>delete</title>
+</head>
+<body>
+    <?php
 		$id=$_GET['id'];
 		if (isset($_GET['id'])){
 
@@ -30,3 +37,6 @@
 		
 ?>
 	
+
+</body>
+</html>

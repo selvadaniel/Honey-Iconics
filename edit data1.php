@@ -184,7 +184,7 @@ window.onclick = function(event) {
 		<ul>
 			<li><h1><u>Subscribe Our Newsletter </u></h1></li>
 			<li><h2>&plus; Email:info@honeyiconics.com<br>support@honeyiconics.com</h2></li>
-			<li><h2>&plus; phone:9876543212</h2></li>
+			<li><h2>&plus; phone:6379453263</h2></li>
 			<li><h2>&plus; Address:185/18,Ani Complex,<br>kamarajar nagar,Kara Madai,<br>Coimbatore</h2></li>
 			<li><h2>&plus; Customer Care : 6384256543 </h2></li>
 		</ul>

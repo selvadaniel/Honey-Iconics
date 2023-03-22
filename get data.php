@@ -117,7 +117,7 @@
                 }
           </script>
     </div>
-	<div id="navbar" style="width: 100%; position: fixed; top: 0px; z-index:auto;">
+	<div id="navbar" style="width: 100%;  top: 0px; z-index:auto;">
 	 <hr>
 		<img src="New folder/logo.jpg">
 		<ul id="navcontent">
@@ -166,7 +166,7 @@ window.onclick = function(event) {
 
 
 	</div>
-	</nav><br><br><br><br><br><br><br>
+	</nav>
 	<header id="head"><br>
 		<img src="New folder/logo1.jpg">
 		<h1 id="top">HONEY</h1>
@@ -251,7 +251,7 @@ else{
 		<ul>
 			<li><h1><u>Subscribe Our Newsletter </u></h1></li>
 			<li><h2>&plus; Email:info@honeyiconics.com<br>support@honeyiconics.com</h2></li>
-			<li><h2>&plus; phone:9876543212</h2></li>
+			<li><h2>&plus; phone:6379453263</h2></li>
 			<li><h2>&plus; Address:185/18,Ani Complex,<br>kamarajar nagar,Kara Madai,<br>Coimbatore</h2></li>
 			<li><h2>&plus; Customer Care : 6384256543 </h2></li>
 		</ul>
