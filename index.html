@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>honey iconics</title>
+	<link rel="stylesheet" href="first.css">
+</head>
+<style>
+.dropbtn {
+  background-color: black;
+  color: orange;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 86%;
+  margin-top: 4%;
+  margin-right: 3%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 2px 8px 16px 15px rgba(5,5,5,5.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.container {
+  position: relative;
+
+}
+.containerr {
+  position: relative;
+
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position:absolute ;
+  height:0px;
+   border-radius: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+.containerr:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.containerr:hover .middle {
+  opacity: 1;
+}
+.text {
+  background: url('New folder/sec.jpg') no-repeat center center/cover;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.textt {
+  background: url('New folder/th.png') no-repeat center center/cover;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+	
+
+	<div id="scroolup">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><b>^</b></button>
+          <script>
+             let mybutton = document.getElementById("myBtn");
+             window.onscroll = function() {scrollFunction()};
+             function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+                 } else {
+                 mybutton.style.display = "none";
+                  }
+                 }
+                function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                }
+          </script>
+    </div>
+	
+	<div id="navbar" style="width: 100%; top: 0px; z-index:auto;">
+	 <hr>
+		<img src="New folder/logo.jpg">
+		<ul id="navcontent">
+			<li><a href="#navbar"><font size="+1">HOME</font></a></li>
+
+            <li><a href="#body"><font size="+1">SERVICES</font></a></li>
+
+			<li><a href="#body1"><font size="+1">ABOUT US</font></a></li>
+
+			<li><a href="#body2"><font size="+1">PRODUCTS</font></a></li>
+
+            <li><a href="#body3"><font size="+1">VACCANCY</font></a></li>
+
+			<li><a href="#body4"><font size="+1">CONTACT US</font></a></li>
+
+		</ul>
+
+		<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"><b>MENU</b></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#navbar">Home</a>
+    <a href="#body">Services</a>
+    <a href="#body1">About</a>
+    <a href="#body2">Products</a>
+    <a href="#body3">Vaccancy</a>
+    <a href="#body4">Contact</a>
+  </div>
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+	</div>
+	</nav>
+	<header id="head"><br>
+		<img src="New folder/logo1.jpg">
+		<h1 id="top">HONEY</h1>
+		<h1 id="top1">ICONICS</h1>
+	</header>
+	<div id="container1">
+		<div id="row1">CUSTOM SOFTWARE DEVELOPMENT COMPANY<br>
+			   TAMILNADU,INDIA	</div> 
+		<div id="container2">
+           
+			<div id="row2">
+				 <form method="POST" action="#body4">
+				<div class="container">
+                  <img src="New folder/sec.jpg" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                     <div class="text"><p style="color: black;font-size: 15px;">To Reach your bussiness goals Across the globe</p><button id="button">CLICK</button>
+                     </div>
+                    </div>
+                </div></form>
+			</div>
+			<div id="row3">
+				 <form method="POST" action="#body4">
+				<div class="containerr">
+                  <img src="New folder/th.png" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                      <div class="textt"><p style="color: black;font-size: 15px;">Web Designing &Mobile Application &MORE..</p><button id="button">CLICK</button></div>
+                      </div>
+                    </div>
+			    </div></form>
+		    </div>
+		    <center><div class="dropdown1">
+  <button onclick="myFunction1()" class="dropbtn1"><b>CONTACT NOW</b></button>
+  <div id="myDropdown1" class="dropdown-content1">
+    <a href="tel:+916384256543">CALL</a>
+    <a href="whatsapp://send?&phone=+916379453263">WHATS APP</a>
+    </div>
+</div></center>
+<script>
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn1')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show1')) {
+        openDropdown.classList.remove('show1');
+      }
+    }
+  }
+}
+</script><div style="float: right;margin-left: 93%;position: fixed;margin-top: 200px;">
+<button id=""><a href="whatsapp://send?&phone=+916379453263"><img src="New folder/whats.png" style="width: 50px;"></a></button>
+	    </div>
+	</div>
+	   
+	<div id="body">
+		<h1 id="top3"><b><font size="+4"><u>OUR SERVICES</u></font></b></h1>
+		<br><br>
+		 <img src="New folder/fo.jpg"style="border-radius: 30%;" id="img1">
+            <div id="content1">
+                <h3="heading"><b><u>MOBILE APP DEVELOPMENT</u></b></h3>
+                <p class="pg">Most innovative android app to accomplish all your business needs...</p><br>
+                <center><button id="button"><a href="key service.html"> More Details..</a></button></center>
+            </div>
+            <br><br>
+		 <img src="New folder/fi.jpg"style="border-radius: 30%;"id="img1">
+            <div id="content2">
+                <h3="heading"><b><u>WEB APPLICATION <br>DEVELOPMENT</u></b></h3>
+                <p class="pg">Providing real-time website and web applications...</p><br>
+                <center><button id="button"><a href="key service.html"> More Details..</a></button></center>
+            </div>
+            <br><br>
+		 <img src="New folder/se.jpg"style="border-radius: 30%;"id="img1">
+            <div id="content3">
+                <h3="heading"><b><u>WEB DESIGNING</u></b></h3>
+                <p class="pg">We Will Deliver Websites Based On Your Business Needs...</p><br>
+                <center><button id="button"> <a href="key service.html">More Details..</a></button></center>
+            </div>
+            <br><br>
+		 <img src="New folder/ei.png"style="border-radius:30%;"id="img1">
+            <div id="content4">
+                <h3="heading"><b><u>DIGITAL MARKETING</u></b></h3>
+                <p class="pg">Our targets complete client satisfiction by offering services with the support of major specialists in the field of digital marketing.</p><br>
+                <center><button id="button"> <a href="key service.html">More Details..</a></button></center>
+            </div>
+            <br><br>
+		 <img src="New folder/ni.jpg"style="border-radius: 30%;"id="img1">
+            <div id="content5">
+                <h3="heading"><b><u>ERP SOFTWARE PRODUCTS</u></b></h3>
+                <p class="pg">customized ERP softwares to fill your all bussiness needs..</p><br>
+                <center><button id="button"> <a href="key service.html">More Details..</a></button></center>
+            </div><br><br><br>
+        
+        <center><button id="button"><a href="key service.html">MORE SERVICES CLICK HERE..</a></button></center>
+         
+    </div>
+
+
+    <div id="body1">
+       <h1 id="top3"><b><font size="+4"><u>ABOUT US</u></font></b></h1>
+       <h1 id="top4">Honey Iconics</h1><br><br>
+       <center><p id="para">Honey Iconics is a professional website design and software development company.we create productive website and mobile apps that boost your business.The team started from year 2023 creating websites,mobile apps and providing web services.</p><br><br>
+       <p id="para">Honey iconics is a software company in coimbatore.our software developers create services that meet the needs of our clients.we can confidently satisfy our clients expectations well sincere.we can provide the best-customized services that meet our client's needs and are acceptable for their business environment.</p><br><br>
+
+       <p id="para">Honey iconics is one of the top business in coimbatore,providing software development services.Government agencies,technology companies,financial institutions,healthcare,enterainment,department store,tours And travels,education,interior designers,And media outlets are among the industries we are.Although Honey Iconics is based in coimbatore,our clientele is spread around the entire globe.</p><br><br>
+
+       <p id="para">Our Team of Web And mobile app developers has years of expertise and skilled in each platform.We constanly focus on excellent communication throughout the work period; We always customise our work to the need of the user,and we always offer maintenance and support.Long-term working relationship with clients are something we constantly value.</p></center><br><br>
+       
+        <div id="click"><h1 id="top4">why to choose us??</h1><br>
+        	 <div id="ig"><img src="choose_your_plan.png"></div>
+
+        <h2>&check; Quality and reliability.</h2>
+        <h2>&check; High Secured data.</h2>
+        <h2>&check; 24/7 customer support.</h2>
+         <div id="ig1"><img src="choose_your_plan.png"></div>
+
+        <h2>&check; Satisfied 300+ customers.</h2>
+        <h2>&check; Affordable cost & easy to use.</h2>
+       </div>
+       <div id="content22">
+       	    <form method="POST" action="#body4"><br><br>
+			<center><h3><u>BEST CUSTOMER SERVICE AND SUPPORT</u></h3></center><br><br>
+			<center><button id="button1">CONTACT US</button></center></form>
+		</div><br><br><br>
+       <div id="content10"><br><br>
+       	  <center>
+  <img class="mySlides w3-animate-right" src="New folder/te.jpg" style="width:50%">
+  <img class="mySlides w3-animate-left" src="New folder/te2.jpg" style="width:50%">
+  <img class="mySlides w3-animate-right" src="New folder/te3.jpg" style="width:50%">
+  <img class="mySlides w3-animate-left" src="New folder/te4.png" style="width:50%">
+  <img class="mySlides w3-animate-right" src="New folder/te5.png" style="width:50%">
+  <img class="mySlides w3-animate-left" src="New folder/te6.png" style="width:50%">
+  <img class="mySlides w3-animate-right" src="New folder/te7.jpg" style="width:50%"></center>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+	</div>
+	<div id="body2"><br>
+		<h1 id="top4"><u>We Serve All Industries</u></h1><br><br>
+		<p id="para">We stay on top of our industry by being experts in yours.</p>
+		<div id="content11">
+			<center><img src="New folder/11.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Education & Learning </h3></center>
+		</div>
+		<div id="content12">
+			<center><img src="New folder/12.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Media & Entertainment</h3></center>
+		</div>
+		<div id="content13">
+			<center><img src="New folder/13.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Hotel & Restaurant </h3></center>
+		</div>
+		<div id="content14">
+			<center><img src="New folder/14.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Sports</h3></center>
+		</div>
+		<div id="content15">
+			<center><img src="New folder/15.jpeg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Real Estate </h3></center>
+		</div>
+		<div id="content16">
+			<center><img src="New folder/16.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve"> E-Commerce</h3></center>
+		</div>
+		<div id="content17">
+			<center><img src="New folder/17.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Health & Fitness</h3></center>
+		</div>
+		<div id="content18">
+			<center><img src="New folder/18.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Travel </h3></center>
+		</div>
+		<div id="content19">
+			<center><img src="New folder/19.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Banking & Finance</h3></center>
+		</div>
+		<div id="content20">
+			<center><img src="New folder/20.jpg"style="border-radius: 20%;"id="img1">
+			<h3 id="serve">Health Care</h3></center>
+		</div>
+		<div id="content21">
+			<form method="POST" action="#body4">
+			<center><h2>PROVIDE INNOVATION WEB APPLICATION &MOBILE APP</h2></center><br><br>
+			<center><button id="button">ENROLL NOW</button></center></form>
+		</div>
+
+	</div>
+	<div id="body3"><br>
+		<div id="content6">
+		   <h1 id="top4"><u>Current openings..</u></h1><br><br>
+		   <p>Currently We have the following job offers, looking for <br>suitable talents to join us.</p><br>
+		   <h3 id="h3">&plus; Team Leader(no.of.vacant-1)</h3><br>
+		   <h3 id="h3">&plus; Office assistant(no.of.vacant-1)</h3><br>
+		   <h3 id="h3">&plus; Customer Support(no.of.vacant-2)</h3><br>
+		   <h3 id="h3">&plus; UI&UX Designer(no.of.vacant-1)</h3><br>
+		   <h3 id="h3">&#43; Bussiness Development Executives(no.of.vacant-20)</h3>
+        </div>
+        <div id="content7"><br>
+        	<h1 id="h3">Submit Your Resume </h1><br>
+        	<form method="POST" action="connect.php">
+                          
+				  <label><b>Name        </label><input type="text" name="myname"id="name"placeholder="Enter your Name" required><br><br>
+			      <label>Email-Id    </label><input type="email" name="myemail"id="email"placeholder="Enter your email" required><br><br>
+			      <label>Phone Number</label><input type="phone" name="myphone"id="phone"placeholder="Enter your Phone no" required><br><br>
+			      <label>Address</label><input type="phone" name="myadd"id="address"placeholder="Enter your Address" required><br><br>
+			      <label>Position</label><input type="phone" name="mypos"id="position"placeholder="Position Apply For.." required><br><br>
+			     
+			      <label>Are you have experience??</label><input type="text" name="myex" placeholder="Yes or No" required><br><br>
+				  
+
+			    
+				   <input type="link" name="mylink"id="link"placeholder="Upload Your Resume Link Here.." required>      
+			     <br><br>
+			     <button id="but">Submit</button></b>
+		    </form>
+        
+        </div>
+	</div>
+	<div id="body4">
+		<div id="contact">
+		<center><br><br>
+			<b><h1><u>CONTACT US.</u></h1><br>
+			<p>If you have any queries leave a message.We will reach you soon...</p><br><br>
+			<form method="POST" action="confirm.php">
+			    <label>NAME  </label><input type="text" name="sname" id="name" placeholder="your name.." required><br><br>
+			    <label>EMAIL  </label><input type="email" name="smail" id="email" placeholder="your email.." required><br><br>
+			    <label>MOBILE  </label><input type="Number" name="snum" id="mobile" placeholder="phone no.."required><br><br>
+			    <label>MESSAGE  </label><textarea name="smg" id="message"cols="30" rows="5"></textarea><br><br>
+				<button id="button">send message</button></b>
+			</form>
+		</center>
+	    </div>
+	    <div id="map"><br><br>
+	    	  
+           <center>
+             <h1 style="color:orange;">
+            Honey Iconics,Karamadai.
+            </h1>
+          
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.266884590347!2d76.95249015033832!3d11.241767153466607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8ef2129d5dd79%3A0xdb455dc1774ca8e5!2sHoney%20Iconics!5e0!3m2!1sen!2sin!4v1679076151372!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+             </div>
+           </center>
+
+
+	    </div>
+	</div>
+
+	<div id="slider">
+		<ul id="slide">
+		<li><img src="New folder/1.jpg"id="img1"></li>
+		<li><img src="New folder/2.jpg"id="img1"></li>
+		<li><img src="New folder/3.jpg"id="img1"></li>
+		<li><img src="New folder/4.jpg"id="img1"></li>
+		<li><img src="New folder/5.jpg"id="img1"></li>
+	    </ul>
+		
+	</div>
+
+
+	<br><br>
+	<div id="footer1">
+		<img src="New folder/logo1.jpg">
+	<div id="content8">
+		<ul>
+			<li><h1><u>Subscribe Our Newsletter </u></h1></li>
+			<li><h2>&plus; Email:info@honeyiconics.com<br>support@honeyiconics.com</h2></li>
+			<li><h2>&plus; phone:9876543212</h2></li>
+			<li><h2>&plus; Address:185/18,Ani Complex,<br>kamarajar nagar,Kara Madai,<br>Coimbatore</h2></li>
+			<li><h2>&plus; Customer Care : 6384256543 </h2></li>
+		</ul>
+	</div>
+	<div id="content9">
+		<ul>
+			<li><h1><u>Information</u></h1></li>
+			<li><h2>&check; <a href="#navbar"> HOME</a></h2></li>
+			<li><h2>&check;  <a href="#body1"> About Us</a></h2></li>
+			<li><h2>&check;  <a href="#body"> Services</a></h2></li>
+			<li><h2>&check;  <a href="#body2">Products </a></h2></li>
+			<li><h2>&check;  <a href="#body3">Vaccancy</a></h2></li>
+		</ul>
+	</div>
+		
+	</div>
+	<div id="footer">
+		<center><h1 id="foot">@Copyright © 2022-2023 HONEY ICONICS</h1><br>
+			<p id="foot">All Rights are reserved</p>
+		<p id="foot">Desinged by Sk</p></center>
+	</div>
+	
+
+</body>
+</html>
